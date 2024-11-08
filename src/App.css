@@ -1,0 +1,81 @@
+html {
+    height: 100%;
+}
+body {
+    background-color: black;
+    color: #ffffff;
+    font-size: 17px;
+    height: 100%;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.maintenance-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    font-weight: 500;
+}
+
+.animation-container{
+    width: 100%; /* Container width, adjust as needed */
+    max-width: 800px; /* Optional: Set a max width for large screens */
+    margin: 0 auto; /* Center the image container */
+}
+
+.animation-image {
+    width: 100%;
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block; /* Removes extra space below image in some browsers */
+}
+
+/* Optional: Additional sizing adjustments for smaller screens */
+@media (max-width: 768px) {
+    .responsive-image {
+        width: 90%; /* Adjust image size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .responsive-image {
+        width: 100%; /* Full width on very small screens */
+    }
+}
+
+.maintenance-page-link{
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    gap: 20px; /* Space between icons */
+    justify-content: center; /* Center-align the icons */
+    padding: 5px 22px;
+}
+
+.social-icon {
+    font-size: 1rem; /* Icon size */
+    color: #ffffff; /* Icon color on black background */
+    background-color: transparent;
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 50%; /* Circular shape */
+    padding: 10px; /* Space inside the circle */
+    transition: all 0.3s ease; /* Smooth transition for animations */
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1); /* Initial shadow */
+}
+
+.social-icon:hover {
+    color: #000; /* Icon color on hover */
+    background-color: #ffffff; /* Background turns white */
+    box-shadow: 0px 8px 16px rgba(255, 255, 255, 0.2); /* Stronger shadow */
+    transform: scale(1.1); /* Slightly enlarge icon */
+}

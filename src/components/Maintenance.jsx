@@ -1,5 +1,5 @@
 import loadingAnimation from '../assets/animation.gif';
-import CV from '../assets/Rohit CV.pdf';
+import Resume from '../assets/Rohit_Resume.pdf';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedinIn, faXTwitter} from "@fortawesome/free-brands-svg-icons";
 import {faDownload} from "@fortawesome/free-solid-svg-icons";
@@ -23,7 +23,7 @@ const Maintenance = () => {
                   <FontAwesomeIcon icon={faXTwitter} className="social-icon"/>
               </a>
 
-              <a download="" href={CV}>
+              <a download="" href={Resume}>
                   <FontAwesomeIcon icon={faDownload} className="social-icon"/>
               </a>
           </div>
